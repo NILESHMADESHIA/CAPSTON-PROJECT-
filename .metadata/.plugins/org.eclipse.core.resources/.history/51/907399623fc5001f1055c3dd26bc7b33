@@ -1,0 +1,53 @@
+package E_Commerce_demoblaze;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Demoblazelogin {
+	
+	public String baseUrl = "https://www.demoblaze.com/";
+	public WebDriver driver ; 
+	
+	@BeforeTest
+	public void setup()
+	{
+		System.out.println("Before Test executed");
+		
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(baseUrl);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60)); //60 seconds
+	}
+	@Test(priority = 1)
+	public void loginTest()
+	{
+		
+				driver.findElement(By.xpath("//*[@id=\"signin2\"]")).click();
+
+				
+				driver.findElement(By.xpath("//*[@id=\"sign-username\"]")).sendKeys("admin123");
+				driver.findElement(By.xpath("//*[@id=\"sign-password\"]")).sendKeys("admin123");
+
+				//login button click
+				driver.findElement(By.xpath("//*[@id=\"signInModal\"]/div/div/div[3]/button[2]")).click();
+
+
+				// Verify if the login was successful by checking the page title
+				//String pageTitle = driver.getTitle();
+
+				/*	if (pageTitle.equals("OrangeHRM")) {
+					System.out.println("Login successful!");
+				} else {
+					System.out.println("Login failed!");
+				}*/
+				//logOut();
+				//Assert.assertEquals("OrangeHRM", pageTitle);
+	}
+
+}

@@ -1,0 +1,22 @@
+package Com.ScenarioNo1;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+public class OHRMLoginReadDataFromExcel {
+  @Test
+  public void testFileRead() throws IOException
+  {
+	  //PATH OF FILE
+	  File f1 = new File(System.getProperty("user.dir")+"//LoginExcelData//Data.xlsx");
+	  FileInputStream fs = new FileInputStream(f1);
+	  XSSFWorkbook wb = new XSSFWorkbook(fs);
+	  XSSFSheet sheet1=wb.getSheet("Data");
+	  
+  }
+}

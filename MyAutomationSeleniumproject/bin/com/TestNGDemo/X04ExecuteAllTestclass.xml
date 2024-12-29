@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name ="Mysuit">
+   	<test name ="My Test">
+   			<classes >
+   				<class name = "com.TestNGDemo.ssignment">
+   				</class>
+   				<class name = "com.TestNGDemo.D06DataDrivenTesting">
+   				</class>	
+   			</classes>
+   	</test>
+</suite>

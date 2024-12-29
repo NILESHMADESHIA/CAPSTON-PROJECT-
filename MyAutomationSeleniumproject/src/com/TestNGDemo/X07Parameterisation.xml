@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name ="Mysuit" parallel = "methods" thread.count = "2" >
+   	<test name ="My Test">
+   		<parameters>
+   			<parameter name = "username" value ="practice" ></parameter>
+   			<parameter name = "password" value ="SuperSecretPassword!" ></parameter>
+   		</parameters>
+   			<classes >
+   				<class name = "com.TestNGDemo.D08Parameterisation">  					
+   				</class>
+   			</classes>
+   	</test>
+</suite>

@@ -1,0 +1,9 @@
+package ProjectCapston;
+
+import org.testng.annotations.Test;
+
+public class LoginHORM {
+  @Test
+  public void f() {
+  }
+}

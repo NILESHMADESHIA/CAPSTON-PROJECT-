@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ApiDemos-debug.apk&apos; to &apos;MobileAppTesting/src/test/java/Assignment&apos;&#x0D;&#x0A;- Original project: &apos;MobileAppTesting&apos;&#x0D;&#x0A;- Destination element: &apos;MobileAppTesting/src/test/java/Assignment&apos;&#x0D;&#x0A;- Original element: &apos;ApiDemos-debug.apk&apos;" description="Copy file" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;Assignment" element1="src/test/resources/ApiDemos-debug.apk" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1734355534866" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package Com.ScenarioNo1;
+
+import org.testng.annotations.Test;
+
+public class OHRMLoginWithExcel {
+  @Test
+  public void f() {
+  }
+}
